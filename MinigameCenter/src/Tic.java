@@ -1,8 +1,9 @@
-
 public class Tic {
     public static void start(){
         System.out.println("Hello.");
         System.out.println("Choose X or O ");
+        
+
     }
     public static void X(){
         System.out.println("You chose X, so you go first!");

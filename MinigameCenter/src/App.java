@@ -8,8 +8,13 @@ public class App {
         System.out.println("Choose The Verity ");
         System.out.println("Tic Tac Toe ");
         String game = gameInput.nextLine();
+
+        Scanner choice = new Scanner(System.in);
+
         if (game.equalsIgnoreCase("Tic Tac Toe")){
         Tic.start();
+
+        String thing = choice.nextLine();
         }
         else if (game.equalsIgnoreCase("Choose The Verity")){
         Verity.start();
@@ -19,6 +24,5 @@ public class App {
         return;
         }
         System.out.println("hi");
-        // HEllo
     }
 }
