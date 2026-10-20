@@ -18,5 +18,6 @@ public class App {
         System.out.println("That's not an option.");
         return;
         }
+        System.out.println("hi");
     }
 }
