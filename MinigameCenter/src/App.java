@@ -12,7 +12,7 @@ public class App {
         Scanner choice = new Scanner(System.in);
 
         if (game.equalsIgnoreCase("Tic Tac Toe")){
-        Tic.start();
+        Tic.start(choice);
 
         String thing = choice.nextLine();
         }

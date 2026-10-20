@@ -1,8 +1,9 @@
+import java.util.Scanner;
 public class Tic {
-    public static void start(){
+    public static void start(Scanner choice){
         System.out.println("Hello.");
         System.out.println("Choose X or O ");
-        
+        String dot = choice.nextLine();
 
     }
     public static void X(){
