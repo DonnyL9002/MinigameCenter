@@ -10,14 +10,14 @@ public class App {
         String game = gameInput.nextLine();
 
         Scanner choice = new Scanner(System.in);
+        Scanner ver = new Scanner(System.in);
 
         if (game.equalsIgnoreCase("Tic Tac Toe")){
         Tic.start(choice);
 
-        String thing = choice.nextLine();
         }
         else if (game.equalsIgnoreCase("Choose The Verity")){
-        Verity.start();
+        Verity.start(ver);
         }
         else{
         System.out.println("That's not an option.");
