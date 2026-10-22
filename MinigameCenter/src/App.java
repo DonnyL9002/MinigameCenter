@@ -1,28 +1,21 @@
 import java.util.Scanner;
 
 public class App {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         System.out.println("Hello, World!");
         Scanner gameInput = new Scanner(System.in);
         System.out.println("Choose a game you want to play: ");
-        System.out.println("Choose The Verity ");
-        System.out.println("Tic Tac Toe ");
+        System.out.println("1) Tic Tac Toe");
+        System.out.println("2) Choose The Verity");
         String game = gameInput.nextLine();
 
-        Scanner choice = new Scanner(System.in);
-        Scanner ver = new Scanner(System.in);
-
-        if (game.equalsIgnoreCase("Tic Tac Toe")){
-        Tic.start(choice);
-
+        if (game.equalsIgnoreCase("Tic Tac Toe") || game.equalsIgnoreCase("1")) {
+            Tic.start(gameInput);
+        } else if (game.equalsIgnoreCase("Choose The Verity") || game.equalsIgnoreCase("2")) {
+            Verity.start(gameInput);
+        } else {
+            System.out.println("That's not an option.");
+            return;
         }
-        else if (game.equalsIgnoreCase("Choose The Verity")){
-        Verity.start(ver);
-        }
-        else{
-        System.out.println("That's not an option.");
-        return;
-        }
-        System.out.println("hi");
     }
 }
