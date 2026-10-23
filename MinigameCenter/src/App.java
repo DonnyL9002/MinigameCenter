@@ -9,10 +9,20 @@ public class App {
         System.out.println("2) Choose The Verity");
         String game = gameInput.nextLine();
 
+        Scanner ver = new Scanner(System.in);
+
+
         if (game.equalsIgnoreCase("Tic Tac Toe") || game.equalsIgnoreCase("1")) {
             Tic.start(gameInput);
+
+
+            
         } else if (game.equalsIgnoreCase("Choose The Verity") || game.equalsIgnoreCase("2")) {
-            Verity.start(gameInput);
+            Verity.start();
+            Verity.guess(ver);
+
+
+
         } else {
             System.out.println("That's not an option.");
             return;
