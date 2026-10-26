@@ -1,11 +1,12 @@
 import java.util.Scanner;
 
 public class Verity {
+    // Randomizer
     public static int roll() {
         return (int) (Math.random() * 4) + 1;
     }
 
-
+    //Starting out the minigame
     public static void start(){
         System.out.println("HI!!");
         System.out.println("You have 4 options verity, cruelty, falsity, and lovity.");
@@ -14,6 +15,7 @@ public class Verity {
         
 
     }
+    //Getting user input and the whole game overall
     public static void guess(Scanner ver){
         System.out.println("What's your guess? ");
         String ity = ver.nextLine();
@@ -22,6 +24,9 @@ public class Verity {
         int second = roll();
         int third = roll();
         int four = roll();
+
+
+        //First guess
         String uno = "";
         if (first == 1){
             uno = "Verity";
@@ -35,7 +40,7 @@ public class Verity {
             uno = "Falsity";
             //return;
         }
-        else if (four == 4){
+        else if (first == 4){
             uno = "Lovity";
             //return;
         }
@@ -49,6 +54,94 @@ public class Verity {
             ity = ver.nextLine();
         }
         
+
+
+        //2nd guess created
+        String dos = "";
+        if (second == 1){
+            dos = "Verity";
+            //return;
+        }
+        else if (second == 2){
+            dos = "Cruelty";
+            //return;
+        }
+        else if (second == 3){
+            dos = "Falsity";
+            //return;
+        }
+        else if (second == 4){
+            dos = "Lovity";
+            //return;
+        }
+        else{
+            System.out.println("Not an option");
+            //return;
+        }
+        while (!ity.equals(dos)) {
+            System.out.println("Try again! ");
+            ity = ver.nextLine();
+        }
+
+
+
+
+        //3rd guess created
+        String tres = "";
+        if (third == 1){
+            uno = "Verity";
+            //return;
+        }
+        else if (third == 2){
+            uno = "Cruelty";
+            //return;
+        }
+        else if (third == 3){
+            uno = "Falsity";
+            //return;
+        }
+        else if (third == 4){
+            uno = "Lovity";
+            //return;
+        }
+        else{
+            System.out.println("Not an option");
+            //return;
+        }
+        while (!ity.equals(tres)) {
+            System.out.println("Try again! ");
+            ity = ver.nextLine();
+        }
+
+
+
+
+        //fourth guess created
+        String cuatro = "";
+        if (four == 1){
+            uno = "Verity";
+            //return;
+        }
+        else if (four == 2){
+            uno = "Cruelty";
+            //return;
+        }
+        else if (four == 3){
+            uno = "Falsity";
+            //return;
+        }
+        else if (four == 4){
+            uno = "Lovity";
+            //return;
+        }
+        else{
+            System.out.println("Not an option");
+            //return;
+        }
+        while (!ity.equals(cuatro)) {
+            System.out.println("Try again! ");
+            ity = ver.nextLine();
+        }
 
 
     }   
