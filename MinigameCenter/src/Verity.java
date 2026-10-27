@@ -49,7 +49,7 @@ public class Verity {
             //return;
         }
 
-        while (!ity.equals(uno)) {
+        while (!ity.equalsIgnoreCase(uno)) {
             System.out.println("Try again! ");
             ity = ver.nextLine();
         }
@@ -78,7 +78,7 @@ public class Verity {
             System.out.println("Not an option");
             //return;
         }
-        while (!ity.equals(dos)) {
+        while (!ity.equalsIgnoreCase(dos)) {
             System.out.println("Try again! ");
             ity = ver.nextLine();
         }
@@ -108,7 +108,7 @@ public class Verity {
             System.out.println("Not an option");
             //return;
         }
-        while (!ity.equals(tres)) {
+        while (!ity.equalsIgnoreCase(tres)) {
             System.out.println("Try again! ");
             ity = ver.nextLine();
         }
@@ -138,7 +138,7 @@ public class Verity {
             System.out.println("Not an option");
             //return;
         }
-        while (!ity.equals(cuatro)) {
+        while (!ity.equalsIgnoreCase(cuatro)) {
             System.out.println("Try again! ");
             ity = ver.nextLine();
         }
