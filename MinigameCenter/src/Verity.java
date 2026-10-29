@@ -19,6 +19,9 @@ public class Verity {
     public static void guess(Scanner ver){
         System.out.println("What's your guess? ");
         String ity = ver.nextLine();
+        String bity = ver.nextLine();
+        String lity = ver.nextLine();
+        String city = ver.nextLine();
 
         int first = roll();
         int second = roll();
@@ -78,9 +81,9 @@ public class Verity {
             System.out.println("Not an option");
             //return;
         }
-        while (!ity.equalsIgnoreCase(dos)) {
+        while (!bity.equalsIgnoreCase(dos)) {
             System.out.println("Try again! ");
-            ity = ver.nextLine();
+            bity = ver.nextLine();
         }
 
 
@@ -108,9 +111,9 @@ public class Verity {
             System.out.println("Not an option");
             //return;
         }
-        while (!ity.equalsIgnoreCase(tres)) {
+        while (!lity.equalsIgnoreCase(tres)) {
             System.out.println("Try again! ");
-            ity = ver.nextLine();
+            lity = ver.nextLine();
         }
 
 
@@ -138,9 +141,9 @@ public class Verity {
             System.out.println("Not an option");
             //return;
         }
-        while (!ity.equalsIgnoreCase(cuatro)) {
+        while (!city.equalsIgnoreCase(cuatro)) {
             System.out.println("Try again! ");
-            ity = ver.nextLine();
+            city = ver.nextLine();
         }
 
 
