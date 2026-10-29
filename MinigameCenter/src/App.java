@@ -5,15 +5,16 @@ public class App {
         System.out.println("Hello, World!");
         Scanner gameInput = new Scanner(System.in);
         System.out.println("Choose a game you want to play: ");
-        System.out.println("1) Tic Tac Toe");
+        System.out.println("1) Rock Paper Scissor");
         System.out.println("2) Choose The Verity");
         String game = gameInput.nextLine();
 
         Scanner ver = new Scanner(System.in);
 
 
-        if (game.equalsIgnoreCase("Tic Tac Toe") || game.equalsIgnoreCase("1")) {
-            Tic.start(gameInput);
+        if (game.equalsIgnoreCase("Rock Paper Scissor") || game.equalsIgnoreCase("1")) {
+            rps.start();
+            rps.guess(gameInput);
 
 
             
