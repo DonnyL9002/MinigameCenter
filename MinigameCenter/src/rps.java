@@ -27,6 +27,8 @@ public class rps {
 
         String uno = "";
         
+        boolean truth = true;
+
         if (first == 1){
             uno = "Rock";
             
@@ -40,7 +42,14 @@ public class rps {
             uno = "Scissor";
             //return;
         }
-        while (!dot.equalsIgnoreCase("paper")) {
+        //while (!dot.equalsIgnoreCase("paper")) {
+            //System.out.println("Try again! ");
+            //dot = choice.nextLine();
+        //}
+        while (truth != true){
+            if (uno == dot){
+                truth = true;
+            }
             System.out.println("Try again! ");
             dot = choice.nextLine();
         }
