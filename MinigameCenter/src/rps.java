@@ -4,14 +4,6 @@ public class rps {
     public static void start() {
         System.out.println("Hello.");
         System.out.println("Choose Rock, Paper, or Scissor");
-        
-        //else if (dot.equalsIgnoreCase("O")) {
-            //System.out.println("You chose O, so you go second!");
-        //} 
-        //else {
-            //System.out.println("Invalid choice. Please enter X or O.");
-        //}
-        
     }
 
     public static int roll() {
@@ -27,7 +19,7 @@ public class rps {
 
         String uno = "";
         
-        boolean truth = true;
+        boolean truth = false;
 
         if (first == 1){
             uno = "Rock";
@@ -47,11 +39,40 @@ public class rps {
             //dot = choice.nextLine();
         //}
         while (truth != true){
-            if (uno == dot){
-                truth = true;
+            if (first == 1){
+                if (dot.equalsIgnoreCase("paper")){
+                    System.out.println("You beat me!");
+                    truth = true;
+                }
+                else {
+                    System.out.println("Try again! ");
+                    dot = choice.nextLine();
+                }
             }
-            System.out.println("Try again! ");
-            dot = choice.nextLine();
+            else if (first == 2){
+                if (dot.equalsIgnoreCase("scissor")){
+                    System.out.println("You beat me!");
+                    truth = true;
+                }
+                else {
+                    System.out.println("Try again! ");
+                    dot = choice.nextLine();
+                }
+                
+            }
+            else if (first == 3){
+                if (dot.equalsIgnoreCase("rock")){
+                    System.out.println("You beat me!");
+                truth = true;    
+                }
+                else {
+                    System.out.println("Try again! ");
+                    dot = choice.nextLine();
+                }
+                
+            }
+            
+            
         }
     }
         

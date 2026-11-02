@@ -15,13 +15,14 @@ public class App {
         if (game.equalsIgnoreCase("Rock Paper Scissor") || game.equalsIgnoreCase("1")) {
             rps.start();
             rps.guess(gameInput);
+            System.out.println("You finished the game!");
 
 
             
         } else if (game.equalsIgnoreCase("Choose The Verity") || game.equalsIgnoreCase("2")) {
             Verity.start();
             Verity.guess(ver);
-
+            System.out.println("You finished the game!");
 
 
         } else {
