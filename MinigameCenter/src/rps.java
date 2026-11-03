@@ -34,19 +34,21 @@ public class rps {
             uno = "Scissor";
             //return;
         }
-        //while (!dot.equalsIgnoreCase("paper")) {
-            //System.out.println("Try again! ");
-            //dot = choice.nextLine();
-        //}
+        
         while (truth != true){
             if (first == 1){
                 if (dot.equalsIgnoreCase("paper")){
                     System.out.println("You beat me!");
                     truth = true;
                 }
+                else if (dot.equalsIgnoreCase("rock")){
+                    System.out.println("Tie!");
+                    truth = true;
+                }
                 else {
-                    System.out.println("Try again! ");
+                    System.out.println("Wrong! ");
                     dot = choice.nextLine();
+                    truth = false;
                 }
             }
             else if (first == 2){

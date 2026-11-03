@@ -22,7 +22,7 @@ public class App {
         } else if (game.equalsIgnoreCase("Choose The Verity") || game.equalsIgnoreCase("2")) {
             Verity.start();
             Verity.guess(ver);
-            System.out.println("You finished the game!");
+            //System.out.println("You finished the game!");
 
 
         } else {
